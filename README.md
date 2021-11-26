@@ -31,3 +31,53 @@
 </tr>
 </tbody>
 </table>
+
+***
+<p></p>
+<p></p>
+<h4>In order to access this sharing space, please copy and paste the code below into a p5.js player</h4>
+<p></p>
+
+[ [Click here to access one](https://editor.p5js.org/) ]
+
+<p></p>
+<p></p>
+ const message = 'Next Earth - the rules';
+ const messageX = 20;
+ const messageY = 150;
+
+  function setup() {
+  createCanvas(600, 260);
+  textSize(59);
+}
+
+ function draw() {
+  background(255, 0, 19);
+
+  if (isMouseInsideText(message, messageX, messageY)) {
+    cursor(HAND);
+    fill(254, 202, 130);
+    stroke(254, 202, 130);
+  } else {
+    cursor(ARROW);
+    fill(255);
+    stroke(255);
+ }
+
+  text(message, messageX, messageY);
+}
+
+ function mouseClicked() {
+  if (isMouseInsideText(message, messageX, messageY)) {
+    window.open('https://padlet.com/szanad04202011/idqixudb57aw30fi', '_blank');
+  }
+}
+
+ <p>function isMouseInsideText(message, messageX, messageY) {
+  <br>const messageWidth = textWidth(message);</br>
+  <br>const messageTop = messageY - textAscent();</br>
+  <br>const messageBottom = messageY + textDescent();</br>
+
+  <br>return mouseX > messageX && mouseX < messageX + messageWidth &&</br>
+  <br>  mouseY > messageTop && mouseY < messageBottom;</br></p>
+}
