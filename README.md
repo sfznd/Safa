@@ -1,4 +1,4 @@
-<h1>PLURALITY IS THE NEW NORM</h1>
+<h1>'Next Earth', the rules?</h1>
 
 <table style="margin: auto; width: 1000px; height: 163px;" border="4">
 <tbody>
